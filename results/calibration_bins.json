@@ -1,0 +1,194 @@
+{
+  "source": "all out-of-fold predictions, 5 repeats x 1,271 incidents",
+  "n_predictions": 6355,
+  "prevalence": 0.225806,
+  "n_bins": 10,
+  "raw_bins": [
+    {
+      "bin_index": 1,
+      "sample_count": 636,
+      "severe_count": 18,
+      "mean_prediction": 0.0621,
+      "observed_fraction": 0.0283,
+      "min_score": 0.0018,
+      "max_score": 0.1142
+    },
+    {
+      "bin_index": 2,
+      "sample_count": 636,
+      "severe_count": 39,
+      "mean_prediction": 0.161,
+      "observed_fraction": 0.0613,
+      "min_score": 0.1145,
+      "max_score": 0.2081
+    },
+    {
+      "bin_index": 3,
+      "sample_count": 636,
+      "severe_count": 70,
+      "mean_prediction": 0.2654,
+      "observed_fraction": 0.1101,
+      "min_score": 0.2081,
+      "max_score": 0.3225
+    },
+    {
+      "bin_index": 4,
+      "sample_count": 636,
+      "severe_count": 120,
+      "mean_prediction": 0.3703,
+      "observed_fraction": 0.1887,
+      "min_score": 0.3228,
+      "max_score": 0.4162
+    },
+    {
+      "bin_index": 5,
+      "sample_count": 636,
+      "severe_count": 127,
+      "mean_prediction": 0.4492,
+      "observed_fraction": 0.1997,
+      "min_score": 0.4162,
+      "max_score": 0.4756
+    },
+    {
+      "bin_index": 6,
+      "sample_count": 635,
+      "severe_count": 171,
+      "mean_prediction": 0.5005,
+      "observed_fraction": 0.2693,
+      "min_score": 0.4756,
+      "max_score": 0.5227
+    },
+    {
+      "bin_index": 7,
+      "sample_count": 635,
+      "severe_count": 173,
+      "mean_prediction": 0.5424,
+      "observed_fraction": 0.2724,
+      "min_score": 0.5228,
+      "max_score": 0.5622
+    },
+    {
+      "bin_index": 8,
+      "sample_count": 635,
+      "severe_count": 187,
+      "mean_prediction": 0.5863,
+      "observed_fraction": 0.2945,
+      "min_score": 0.5622,
+      "max_score": 0.613
+    },
+    {
+      "bin_index": 9,
+      "sample_count": 635,
+      "severe_count": 219,
+      "mean_prediction": 0.6487,
+      "observed_fraction": 0.3449,
+      "min_score": 0.613,
+      "max_score": 0.6908
+    },
+    {
+      "bin_index": 10,
+      "sample_count": 635,
+      "severe_count": 311,
+      "mean_prediction": 0.7848,
+      "observed_fraction": 0.4898,
+      "min_score": 0.6909,
+      "max_score": 0.9755
+    }
+  ],
+  "calibrated_bins": [
+    {
+      "bin_index": 1,
+      "sample_count": 636,
+      "severe_count": 18,
+      "mean_prediction": 0.0248,
+      "observed_fraction": 0.0283,
+      "min_score": 0.0005,
+      "max_score": 0.0433
+    },
+    {
+      "bin_index": 2,
+      "sample_count": 636,
+      "severe_count": 42,
+      "mean_prediction": 0.0645,
+      "observed_fraction": 0.066,
+      "min_score": 0.0433,
+      "max_score": 0.0862
+    },
+    {
+      "bin_index": 3,
+      "sample_count": 636,
+      "severe_count": 81,
+      "mean_prediction": 0.1108,
+      "observed_fraction": 0.1274,
+      "min_score": 0.0862,
+      "max_score": 0.1376
+    },
+    {
+      "bin_index": 4,
+      "sample_count": 636,
+      "severe_count": 97,
+      "mean_prediction": 0.1613,
+      "observed_fraction": 0.1525,
+      "min_score": 0.1376,
+      "max_score": 0.183
+    },
+    {
+      "bin_index": 5,
+      "sample_count": 636,
+      "severe_count": 143,
+      "mean_prediction": 0.2021,
+      "observed_fraction": 0.2248,
+      "min_score": 0.183,
+      "max_score": 0.22
+    },
+    {
+      "bin_index": 6,
+      "sample_count": 635,
+      "severe_count": 163,
+      "mean_prediction": 0.2363,
+      "observed_fraction": 0.2567,
+      "min_score": 0.22,
+      "max_score": 0.2521
+    },
+    {
+      "bin_index": 7,
+      "sample_count": 635,
+      "severe_count": 178,
+      "mean_prediction": 0.2652,
+      "observed_fraction": 0.2803,
+      "min_score": 0.2522,
+      "max_score": 0.2797
+    },
+    {
+      "bin_index": 8,
+      "sample_count": 635,
+      "severe_count": 180,
+      "mean_prediction": 0.2978,
+      "observed_fraction": 0.2835,
+      "min_score": 0.2798,
+      "max_score": 0.319
+    },
+    {
+      "bin_index": 9,
+      "sample_count": 635,
+      "severe_count": 223,
+      "mean_prediction": 0.3522,
+      "observed_fraction": 0.3512,
+      "min_score": 0.3193,
+      "max_score": 0.3945
+    },
+    {
+      "bin_index": 10,
+      "sample_count": 635,
+      "severe_count": 310,
+      "mean_prediction": 0.5275,
+      "observed_fraction": 0.4882,
+      "min_score": 0.395,
+      "max_score": 0.9459
+    }
+  ],
+  "pooled_brier": {
+    "raw": 0.207875,
+    "calibrated": 0.155888
+  }
+}

@@ -1,0 +1,1047 @@
+{
+  "primary_window_2010_2024": {
+    "observation_window": "2010-2024",
+    "sample_flow": {
+      "raw_total_records": 1592,
+      "period_records": 1486,
+      "natural_gas_records": 1401,
+      "missing_release_records_excluded": 61,
+      "zero_release_records_excluded": 57,
+      "positive_release_candidates": 1283,
+      "reporting_anomalies_excluded": 12,
+      "final_clean_sample_n": 1271,
+      "records_outside_window": 106,
+      "non_natural_gas_excluded": 85,
+      "non_natural_gas_by_commodity": {
+        "(BLANK)": 63,
+        "PROPANE GAS": 15,
+        "OTHER GAS": 5,
+        "SYNTHETIC GAS": 2
+      }
+    },
+    "blank_commodity_audit": {
+      "total_count": 63,
+      "severe_incident_count": 12,
+      "fatalities": 4,
+      "injuries": 18,
+      "years": {
+        "2011": 2,
+        "2012": 9,
+        "2013": 12,
+        "2014": 11,
+        "2015": 7,
+        "2016": 5,
+        "2017": 4,
+        "2018": 2,
+        "2019": 9,
+        "2020": 2
+      },
+      "note": "COMMODITY_RELEASED_TYPE is empty, so the gas type cannot be confirmed. These records are excluded from the primary sample; see sensitivity specification 5."
+    },
+    "anomalous_records_audit": [
+      {
+        "report_number": "20180033",
+        "year": 2018,
+        "cause": "OTHER INCIDENT CAUSE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 63.5,
+        "cause_details": "UNKNOWN"
+      },
+      {
+        "report_number": "20170008",
+        "year": 2016,
+        "cause": "OTHER OUTSIDE FORCE DAMAGE",
+        "fatalities": 0,
+        "injuries": 1,
+        "release_mcf": 1.0,
+        "cause_details": "OTHER OUTSIDE FORCE DAMAGE"
+      },
+      {
+        "report_number": "20150096",
+        "year": 2015,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 2,
+        "release_mcf": 1595.0,
+        "cause_details": "EXCAVATION DAMAGE BY THIRD PARTY"
+      },
+      {
+        "report_number": "20150080",
+        "year": 2015,
+        "cause": "OTHER INCIDENT CAUSE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 1.0,
+        "cause_details": "MISCELLANEOUS"
+      },
+      {
+        "report_number": "20150054",
+        "year": 2015,
+        "cause": "EQUIPMENT FAILURE",
+        "fatalities": 0,
+        "injuries": 1,
+        "release_mcf": 0.7,
+        "cause_details": "NON-THREADED CONNECTION FAILURE"
+      },
+      {
+        "report_number": "20150040",
+        "year": 2015,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 47.0,
+        "cause_details": "PREVIOUS DAMAGE DUE TO EXCAVATION ACTIVITY"
+      },
+      {
+        "report_number": "20150008",
+        "year": 2015,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 557.0,
+        "cause_details": "PREVIOUS DAMAGE DUE TO EXCAVATION ACTIVITY"
+      },
+      {
+        "report_number": "20140078",
+        "year": 2014,
+        "cause": "OTHER INCIDENT CAUSE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 5.0,
+        "cause_details": "MISCELLANEOUS"
+      },
+      {
+        "report_number": "20130082",
+        "year": 2013,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 8,
+        "release_mcf": 0.1,
+        "cause_details": "EXCAVATION DAMAGE BY THIRD PARTY"
+      },
+      {
+        "report_number": "20130021",
+        "year": 2013,
+        "cause": "OTHER OUTSIDE FORCE DAMAGE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 31.0,
+        "cause_details": "DAMAGE BY CAR, TRUCK, OR OTHER MOTORIZED VEHICLE/EQUIPMENT NOT ENGAGED IN EXCAVA"
+      },
+      {
+        "report_number": "20110387",
+        "year": 2011,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 729.0,
+        "cause_details": "EXCAVATION DAMAGE BY THIRD PARTY"
+      },
+      {
+        "report_number": "20110005",
+        "year": 2010,
+        "cause": "OTHER INCIDENT CAUSE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 1.0,
+        "cause_details": "MISCELLANEOUS"
+      }
+    ],
+    "missing_release_audit": {
+      "total_count": 61,
+      "years": {
+        "2014": 6,
+        "2013": 8,
+        "2012": 15,
+        "2011": 19,
+        "2010": 13
+      },
+      "severe_incident_count": 19,
+      "fatalities": 5,
+      "injuries": 24
+    },
+    "unignited_explosion_field_audit": {
+      "total_unignited": 529,
+      "blank_explosion_count": 137,
+      "no_explosion_count": 392,
+      "note": "When IGNITE_IND is NO the form skips the explosion question, so EXPLODE_IND may be blank. Both blank and NO are treated as no explosion."
+    },
+    "casualty_totals": {
+      "total_incidents": 1271,
+      "severe_incidents": 287,
+      "severe_incident_rate": 0.2258,
+      "fatalities": 113,
+      "injuries": 537,
+      "total_casualties": 650
+    },
+    "node_probabilities": {
+      "p_ignition": {
+        "point_estimate": 0.5838,
+        "count": 742,
+        "denominator": 1271,
+        "wilson_ci_95": [
+          0.5565,
+          0.6106
+        ]
+      },
+      "p_explosion_given_ignition": {
+        "point_estimate": 0.3558,
+        "count": 264,
+        "denominator": 742,
+        "wilson_ci_95": [
+          0.3222,
+          0.3909
+        ]
+      },
+      "p_severe_given_ie": {
+        "point_estimate": 0.4394,
+        "count": 116,
+        "denominator": 264,
+        "wilson_ci_95": [
+          0.3808,
+          0.4997
+        ]
+      },
+      "p_severe_given_ine": {
+        "point_estimate": 0.2887,
+        "count": 138,
+        "denominator": 478,
+        "wilson_ci_95": [
+          0.2499,
+          0.3309
+        ]
+      },
+      "p_severe_given_ni": {
+        "point_estimate": 0.0624,
+        "count": 33,
+        "denominator": 529,
+        "wilson_ci_95": [
+          0.0448,
+          0.0863
+        ]
+      }
+    },
+    "chain_rule_verification": {
+      "Path_1": {
+        "telescoping_product": 0.0913,
+        "empirical_fraction": 0.0913
+      },
+      "Path_2": {
+        "telescoping_product": 0.1164,
+        "empirical_fraction": 0.1164
+      },
+      "Path_3": {
+        "telescoping_product": 0.1086,
+        "empirical_fraction": 0.1086
+      },
+      "Path_4": {
+        "telescoping_product": 0.2675,
+        "empirical_fraction": 0.2675
+      },
+      "Path_5": {
+        "telescoping_product": 0.026,
+        "empirical_fraction": 0.026
+      },
+      "Path_6": {
+        "telescoping_product": 0.3902,
+        "empirical_fraction": 0.3902
+      },
+      "sum_of_endpoints": 1.0
+    },
+    "endpoints": {
+      "Path_1_IE_Severe": {
+        "title": "Ignition & Explosion with Severe Harm (Fatal / Hospitalized)",
+        "incident_count": 116,
+        "unconditional_probability": 0.0913,
+        "wilson_ci_95": [
+          0.0766,
+          0.1084
+        ],
+        "fatalities": 67,
+        "injuries": 308,
+        "total_casualties": 375
+      },
+      "Path_2_IE_NoSevere": {
+        "title": "Ignition & Explosion without Severe Harm",
+        "incident_count": 148,
+        "unconditional_probability": 0.1164,
+        "wilson_ci_95": [
+          0.1,
+          0.1352
+        ],
+        "fatalities": 0,
+        "injuries": 0,
+        "total_casualties": 0
+      },
+      "Path_3_INE_Severe": {
+        "title": "Ignition without Explosion with Severe Harm (Fatal / Hospitalized)",
+        "incident_count": 138,
+        "unconditional_probability": 0.1086,
+        "wilson_ci_95": [
+          0.0926,
+          0.1269
+        ],
+        "fatalities": 39,
+        "injuries": 193,
+        "total_casualties": 232
+      },
+      "Path_4_INE_NoSevere": {
+        "title": "Ignition without Explosion without Severe Harm",
+        "incident_count": 340,
+        "unconditional_probability": 0.2675,
+        "wilson_ci_95": [
+          0.2439,
+          0.2925
+        ],
+        "fatalities": 0,
+        "injuries": 0,
+        "total_casualties": 0
+      },
+      "Path_5_NI_Severe": {
+        "title": "Unignited Release with Severe Harm (Fatal / Hospitalized)",
+        "incident_count": 33,
+        "unconditional_probability": 0.026,
+        "wilson_ci_95": [
+          0.0185,
+          0.0362
+        ],
+        "fatalities": 7,
+        "injuries": 36,
+        "total_casualties": 43
+      },
+      "Path_6_NI_NoSevere": {
+        "title": "Unignited Release without Severe Harm",
+        "incident_count": 496,
+        "unconditional_probability": 0.3902,
+        "wilson_ci_95": [
+          0.3638,
+          0.4174
+        ],
+        "fatalities": 0,
+        "injuries": 0,
+        "total_casualties": 0
+      }
+    },
+    "cause_stratification": {
+      "OTHER INCIDENT CAUSE": {
+        "incident_count": 58,
+        "incident_share": 0.0456,
+        "p_ignition": 0.8448,
+        "p_explosion_given_ignition": 0.551,
+        "p_severe_harm": 0.3448,
+        "severe_incident_count": 20,
+        "severe_incident_share_of_all_severe": 0.0697,
+        "fatalities": 15,
+        "injuries": 60,
+        "total_casualties": 75,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.2356,
+          0.4733
+        ]
+      },
+      "OTHER OUTSIDE FORCE DAMAGE": {
+        "incident_count": 407,
+        "incident_share": 0.3202,
+        "p_ignition": 0.7518,
+        "p_explosion_given_ignition": 0.219,
+        "p_severe_harm": 0.2408,
+        "severe_incident_count": 98,
+        "severe_incident_share_of_all_severe": 0.3415,
+        "fatalities": 49,
+        "injuries": 137,
+        "total_casualties": 186,
+        "external_fire_primary_cause_count": 72,
+        "wilson_ci_p_severe": [
+          0.2018,
+          0.2846
+        ]
+      },
+      "INCORRECT OPERATION": {
+        "incident_count": 86,
+        "incident_share": 0.0677,
+        "p_ignition": 0.7093,
+        "p_explosion_given_ignition": 0.1475,
+        "p_severe_harm": 0.5581,
+        "severe_incident_count": 48,
+        "severe_incident_share_of_all_severe": 0.1672,
+        "fatalities": 6,
+        "injuries": 98,
+        "total_casualties": 104,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.4529,
+          0.6584
+        ]
+      },
+      "EXCAVATION DAMAGE": {
+        "incident_count": 479,
+        "incident_share": 0.3769,
+        "p_ignition": 0.3987,
+        "p_explosion_given_ignition": 0.4293,
+        "p_severe_harm": 0.1399,
+        "severe_incident_count": 67,
+        "severe_incident_share_of_all_severe": 0.2334,
+        "fatalities": 21,
+        "injuries": 114,
+        "total_casualties": 135,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.1117,
+          0.1738
+        ]
+      },
+      "EQUIPMENT FAILURE": {
+        "incident_count": 48,
+        "incident_share": 0.0378,
+        "p_ignition": 0.1875,
+        "p_explosion_given_ignition": 0.2222,
+        "p_severe_harm": 0.0833,
+        "severe_incident_count": 4,
+        "severe_incident_share_of_all_severe": 0.0139,
+        "fatalities": 0,
+        "injuries": 4,
+        "total_casualties": 4,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.0329,
+          0.1955
+        ]
+      },
+      "NATURAL FORCE DAMAGE": {
+        "incident_count": 82,
+        "incident_share": 0.0645,
+        "p_ignition": 0.7195,
+        "p_explosion_given_ignition": 0.4576,
+        "p_severe_harm": 0.1585,
+        "severe_incident_count": 13,
+        "severe_incident_share_of_all_severe": 0.0453,
+        "fatalities": 16,
+        "injuries": 66,
+        "total_casualties": 82,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.0951,
+          0.2526
+        ]
+      },
+      "CORROSION FAILURE": {
+        "incident_count": 28,
+        "incident_share": 0.022,
+        "p_ignition": 0.5,
+        "p_explosion_given_ignition": 0.6429,
+        "p_severe_harm": 0.2143,
+        "severe_incident_count": 6,
+        "severe_incident_share_of_all_severe": 0.0209,
+        "fatalities": 1,
+        "injuries": 6,
+        "total_casualties": 7,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.1021,
+          0.3954
+        ]
+      },
+      "PIPE, WELD, OR JOINT FAILURE": {
+        "incident_count": 83,
+        "incident_share": 0.0653,
+        "p_ignition": 0.6386,
+        "p_explosion_given_ignition": 0.7736,
+        "p_severe_harm": 0.3735,
+        "severe_incident_count": 31,
+        "severe_incident_share_of_all_severe": 0.108,
+        "fatalities": 5,
+        "injuries": 52,
+        "total_casualties": 57,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.2772,
+          0.481
+        ]
+      }
+    },
+    "outside_force_subcauses": [
+      {
+        "cause_detail": "DAMAGE BY CAR, TRUCK, OR OTHER MOTORIZED VEHICLE/EQUIPMENT NOT ENGAGED IN EXCAVATION",
+        "incident_count": 190,
+        "severe_incident_count": 52,
+        "fatalities": 21,
+        "injuries": 68
+      },
+      {
+        "cause_detail": "OTHER OUTSIDE FORCE DAMAGE",
+        "incident_count": 85,
+        "severe_incident_count": 23,
+        "fatalities": 15,
+        "injuries": 37
+      },
+      {
+        "cause_detail": "NEARBY INDUSTRIAL, MAN-MADE, OR OTHER FIRE/EXPLOSION AS PRIMARY CAUSE OF INCIDENT",
+        "incident_count": 72,
+        "severe_incident_count": 14,
+        "fatalities": 8,
+        "injuries": 15
+      },
+      {
+        "cause_detail": "ELECTRICAL ARCING FROM OTHER EQUIPMENT OR FACILITY",
+        "incident_count": 38,
+        "severe_incident_count": 2,
+        "fatalities": 0,
+        "injuries": 5
+      },
+      {
+        "cause_detail": "INTENTIONAL DAMAGE",
+        "incident_count": 18,
+        "severe_incident_count": 7,
+        "fatalities": 5,
+        "injuries": 12
+      },
+      {
+        "cause_detail": "PREVIOUS MECHANICAL DAMAGE NOT RELATED TO EXCAVATION",
+        "incident_count": 2,
+        "severe_incident_count": 0,
+        "fatalities": 0,
+        "injuries": 0
+      },
+      {
+        "cause_detail": "EROSION OF SUPPORT DUE TO OTHER UTILITIES",
+        "incident_count": 1,
+        "severe_incident_count": 0,
+        "fatalities": 0,
+        "injuries": 0
+      },
+      {
+        "cause_detail": "DAMAGE BY BOATS, BARGES, DRILLING RIGS, OR OTHER MARITIME EQUIPMENT OR VESSELS SET ADRIFT OR WHICH HAVE OTHERWISE LOST THEIR MOORING",
+        "incident_count": 1,
+        "severe_incident_count": 0,
+        "fatalities": 0,
+        "injuries": 0
+      }
+    ],
+    "external_fire_initiating_cases": {
+      "total_count": 72,
+      "explanation": "In these Other Outside Force Damage records a nearby fire or explosion damaged the pipe, so ignition came before the release. The tree therefore classifies recorded outcomes and does not claim a fixed time order for every incident."
+    }
+  },
+  "baseline_window_2015_2024": {
+    "observation_window": "2015-2024",
+    "sample_flow": {
+      "raw_total_records": 1592,
+      "period_records": 952,
+      "natural_gas_records": 911,
+      "missing_release_records_excluded": 0,
+      "zero_release_records_excluded": 37,
+      "positive_release_candidates": 874,
+      "reporting_anomalies_excluded": 7,
+      "final_clean_sample_n": 867,
+      "records_outside_window": 640,
+      "non_natural_gas_excluded": 41,
+      "non_natural_gas_by_commodity": {
+        "(BLANK)": 29,
+        "PROPANE GAS": 7,
+        "OTHER GAS": 3,
+        "SYNTHETIC GAS": 2
+      }
+    },
+    "blank_commodity_audit": {
+      "total_count": 29,
+      "severe_incident_count": 4,
+      "fatalities": 0,
+      "injuries": 5,
+      "years": {
+        "2015": 7,
+        "2016": 5,
+        "2017": 4,
+        "2018": 2,
+        "2019": 9,
+        "2020": 2
+      },
+      "note": "COMMODITY_RELEASED_TYPE is empty, so the gas type cannot be confirmed. These records are excluded from the primary sample; see sensitivity specification 5."
+    },
+    "anomalous_records_audit": [
+      {
+        "report_number": "20180033",
+        "year": 2018,
+        "cause": "OTHER INCIDENT CAUSE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 63.5,
+        "cause_details": "UNKNOWN"
+      },
+      {
+        "report_number": "20170008",
+        "year": 2016,
+        "cause": "OTHER OUTSIDE FORCE DAMAGE",
+        "fatalities": 0,
+        "injuries": 1,
+        "release_mcf": 1.0,
+        "cause_details": "OTHER OUTSIDE FORCE DAMAGE"
+      },
+      {
+        "report_number": "20150096",
+        "year": 2015,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 2,
+        "release_mcf": 1595.0,
+        "cause_details": "EXCAVATION DAMAGE BY THIRD PARTY"
+      },
+      {
+        "report_number": "20150080",
+        "year": 2015,
+        "cause": "OTHER INCIDENT CAUSE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 1.0,
+        "cause_details": "MISCELLANEOUS"
+      },
+      {
+        "report_number": "20150054",
+        "year": 2015,
+        "cause": "EQUIPMENT FAILURE",
+        "fatalities": 0,
+        "injuries": 1,
+        "release_mcf": 0.7,
+        "cause_details": "NON-THREADED CONNECTION FAILURE"
+      },
+      {
+        "report_number": "20150040",
+        "year": 2015,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 47.0,
+        "cause_details": "PREVIOUS DAMAGE DUE TO EXCAVATION ACTIVITY"
+      },
+      {
+        "report_number": "20150008",
+        "year": 2015,
+        "cause": "EXCAVATION DAMAGE",
+        "fatalities": 0,
+        "injuries": 0,
+        "release_mcf": 557.0,
+        "cause_details": "PREVIOUS DAMAGE DUE TO EXCAVATION ACTIVITY"
+      }
+    ],
+    "missing_release_audit": {
+      "total_count": 0,
+      "years": {},
+      "severe_incident_count": 0,
+      "fatalities": 0,
+      "injuries": 0
+    },
+    "unignited_explosion_field_audit": {
+      "total_unignited": 385,
+      "blank_explosion_count": 137,
+      "no_explosion_count": 248,
+      "note": "When IGNITE_IND is NO the form skips the explosion question, so EXPLODE_IND may be blank. Both blank and NO are treated as no explosion."
+    },
+    "casualty_totals": {
+      "total_incidents": 867,
+      "severe_incidents": 191,
+      "severe_incident_rate": 0.2203,
+      "fatalities": 65,
+      "injuries": 325,
+      "total_casualties": 390
+    },
+    "node_probabilities": {
+      "p_ignition": {
+        "point_estimate": 0.5559,
+        "count": 482,
+        "denominator": 867,
+        "wilson_ci_95": [
+          0.5227,
+          0.5887
+        ]
+      },
+      "p_explosion_given_ignition": {
+        "point_estimate": 0.3527,
+        "count": 170,
+        "denominator": 482,
+        "wilson_ci_95": [
+          0.3114,
+          0.3964
+        ]
+      },
+      "p_severe_given_ie": {
+        "point_estimate": 0.4294,
+        "count": 73,
+        "denominator": 170,
+        "wilson_ci_95": [
+          0.3574,
+          0.5046
+        ]
+      },
+      "p_severe_given_ine": {
+        "point_estimate": 0.3045,
+        "count": 95,
+        "denominator": 312,
+        "wilson_ci_95": [
+          0.2561,
+          0.3577
+        ]
+      },
+      "p_severe_given_ni": {
+        "point_estimate": 0.0597,
+        "count": 23,
+        "denominator": 385,
+        "wilson_ci_95": [
+          0.0401,
+          0.088
+        ]
+      }
+    },
+    "chain_rule_verification": {
+      "Path_1": {
+        "telescoping_product": 0.0842,
+        "empirical_fraction": 0.0842
+      },
+      "Path_2": {
+        "telescoping_product": 0.1119,
+        "empirical_fraction": 0.1119
+      },
+      "Path_3": {
+        "telescoping_product": 0.1096,
+        "empirical_fraction": 0.1096
+      },
+      "Path_4": {
+        "telescoping_product": 0.2503,
+        "empirical_fraction": 0.2503
+      },
+      "Path_5": {
+        "telescoping_product": 0.0265,
+        "empirical_fraction": 0.0265
+      },
+      "Path_6": {
+        "telescoping_product": 0.4175,
+        "empirical_fraction": 0.4175
+      },
+      "sum_of_endpoints": 1.0
+    },
+    "endpoints": {
+      "Path_1_IE_Severe": {
+        "title": "Ignition & Explosion with Severe Harm (Fatal / Hospitalized)",
+        "incident_count": 73,
+        "unconditional_probability": 0.0842,
+        "wilson_ci_95": [
+          0.0675,
+          0.1046
+        ],
+        "fatalities": 38,
+        "injuries": 145,
+        "total_casualties": 183
+      },
+      "Path_2_IE_NoSevere": {
+        "title": "Ignition & Explosion without Severe Harm",
+        "incident_count": 97,
+        "unconditional_probability": 0.1119,
+        "wilson_ci_95": [
+          0.0926,
+          0.1346
+        ],
+        "fatalities": 0,
+        "injuries": 0,
+        "total_casualties": 0
+      },
+      "Path_3_INE_Severe": {
+        "title": "Ignition without Explosion with Severe Harm (Fatal / Hospitalized)",
+        "incident_count": 95,
+        "unconditional_probability": 0.1096,
+        "wilson_ci_95": [
+          0.0905,
+          0.1321
+        ],
+        "fatalities": 24,
+        "injuries": 155,
+        "total_casualties": 179
+      },
+      "Path_4_INE_NoSevere": {
+        "title": "Ignition without Explosion without Severe Harm",
+        "incident_count": 217,
+        "unconditional_probability": 0.2503,
+        "wilson_ci_95": [
+          0.2226,
+          0.2802
+        ],
+        "fatalities": 0,
+        "injuries": 0,
+        "total_casualties": 0
+      },
+      "Path_5_NI_Severe": {
+        "title": "Unignited Release with Severe Harm (Fatal / Hospitalized)",
+        "incident_count": 23,
+        "unconditional_probability": 0.0265,
+        "wilson_ci_95": [
+          0.0177,
+          0.0395
+        ],
+        "fatalities": 3,
+        "injuries": 25,
+        "total_casualties": 28
+      },
+      "Path_6_NI_NoSevere": {
+        "title": "Unignited Release without Severe Harm",
+        "incident_count": 362,
+        "unconditional_probability": 0.4175,
+        "wilson_ci_95": [
+          0.3851,
+          0.4507
+        ],
+        "fatalities": 0,
+        "injuries": 0,
+        "total_casualties": 0
+      }
+    },
+    "cause_stratification": {
+      "OTHER INCIDENT CAUSE": {
+        "incident_count": 36,
+        "incident_share": 0.0415,
+        "p_ignition": 0.8056,
+        "p_explosion_given_ignition": 0.5517,
+        "p_severe_harm": 0.3889,
+        "severe_incident_count": 14,
+        "severe_incident_share_of_all_severe": 0.0733,
+        "fatalities": 12,
+        "injuries": 49,
+        "total_casualties": 61,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.2478,
+          0.5514
+        ]
+      },
+      "OTHER OUTSIDE FORCE DAMAGE": {
+        "incident_count": 250,
+        "incident_share": 0.2884,
+        "p_ignition": 0.74,
+        "p_explosion_given_ignition": 0.2432,
+        "p_severe_harm": 0.256,
+        "severe_incident_count": 64,
+        "severe_incident_share_of_all_severe": 0.3351,
+        "fatalities": 33,
+        "injuries": 95,
+        "total_casualties": 128,
+        "external_fire_primary_cause_count": 33,
+        "wilson_ci_p_severe": [
+          0.2059,
+          0.3135
+        ]
+      },
+      "INCORRECT OPERATION": {
+        "incident_count": 59,
+        "incident_share": 0.0681,
+        "p_ignition": 0.678,
+        "p_explosion_given_ignition": 0.125,
+        "p_severe_harm": 0.5932,
+        "severe_incident_count": 35,
+        "severe_incident_share_of_all_severe": 0.1832,
+        "fatalities": 3,
+        "injuries": 63,
+        "total_casualties": 66,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.4659,
+          0.7091
+        ]
+      },
+      "EXCAVATION DAMAGE": {
+        "incident_count": 361,
+        "incident_share": 0.4164,
+        "p_ignition": 0.374,
+        "p_explosion_given_ignition": 0.3852,
+        "p_severe_harm": 0.1136,
+        "severe_incident_count": 41,
+        "severe_incident_share_of_all_severe": 0.2147,
+        "fatalities": 10,
+        "injuries": 65,
+        "total_casualties": 75,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.0848,
+          0.1505
+        ]
+      },
+      "EQUIPMENT FAILURE": {
+        "incident_count": 22,
+        "incident_share": 0.0254,
+        "p_ignition": 0.1818,
+        "p_explosion_given_ignition": 0.25,
+        "p_severe_harm": 0.0455,
+        "severe_incident_count": 1,
+        "severe_incident_share_of_all_severe": 0.0052,
+        "fatalities": 0,
+        "injuries": 1,
+        "total_casualties": 1,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.0081,
+          0.218
+        ]
+      },
+      "NATURAL FORCE DAMAGE": {
+        "incident_count": 62,
+        "incident_share": 0.0715,
+        "p_ignition": 0.7097,
+        "p_explosion_given_ignition": 0.3182,
+        "p_severe_harm": 0.129,
+        "severe_incident_count": 8,
+        "severe_incident_share_of_all_severe": 0.0419,
+        "fatalities": 2,
+        "injuries": 12,
+        "total_casualties": 14,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.0669,
+          0.2345
+        ]
+      },
+      "CORROSION FAILURE": {
+        "incident_count": 18,
+        "incident_share": 0.0208,
+        "p_ignition": 0.4444,
+        "p_explosion_given_ignition": 1.0,
+        "p_severe_harm": 0.2222,
+        "severe_incident_count": 4,
+        "severe_incident_share_of_all_severe": 0.0209,
+        "fatalities": 1,
+        "injuries": 4,
+        "total_casualties": 5,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.09,
+          0.4521
+        ]
+      },
+      "PIPE, WELD, OR JOINT FAILURE": {
+        "incident_count": 59,
+        "incident_share": 0.0681,
+        "p_ignition": 0.6271,
+        "p_explosion_given_ignition": 0.7838,
+        "p_severe_harm": 0.4068,
+        "severe_incident_count": 24,
+        "severe_incident_share_of_all_severe": 0.1257,
+        "fatalities": 4,
+        "injuries": 36,
+        "total_casualties": 40,
+        "external_fire_primary_cause_count": 0,
+        "wilson_ci_p_severe": [
+          0.2909,
+          0.5341
+        ]
+      }
+    },
+    "outside_force_subcauses": [
+      {
+        "cause_detail": "DAMAGE BY CAR, TRUCK, OR OTHER MOTORIZED VEHICLE/EQUIPMENT NOT ENGAGED IN EXCAVATION",
+        "incident_count": 122,
+        "severe_incident_count": 36,
+        "fatalities": 12,
+        "injuries": 49
+      },
+      {
+        "cause_detail": "OTHER OUTSIDE FORCE DAMAGE",
+        "incident_count": 57,
+        "severe_incident_count": 16,
+        "fatalities": 14,
+        "injuries": 30
+      },
+      {
+        "cause_detail": "NEARBY INDUSTRIAL, MAN-MADE, OR OTHER FIRE/EXPLOSION AS PRIMARY CAUSE OF INCIDENT",
+        "incident_count": 33,
+        "severe_incident_count": 6,
+        "fatalities": 3,
+        "injuries": 4
+      },
+      {
+        "cause_detail": "ELECTRICAL ARCING FROM OTHER EQUIPMENT OR FACILITY",
+        "incident_count": 24,
+        "severe_incident_count": 0,
+        "fatalities": 0,
+        "injuries": 0
+      },
+      {
+        "cause_detail": "INTENTIONAL DAMAGE",
+        "incident_count": 12,
+        "severe_incident_count": 6,
+        "fatalities": 4,
+        "injuries": 12
+      },
+      {
+        "cause_detail": "EROSION OF SUPPORT DUE TO OTHER UTILITIES",
+        "incident_count": 1,
+        "severe_incident_count": 0,
+        "fatalities": 0,
+        "injuries": 0
+      },
+      {
+        "cause_detail": "DAMAGE BY BOATS, BARGES, DRILLING RIGS, OR OTHER MARITIME EQUIPMENT OR VESSELS SET ADRIFT OR WHICH HAVE OTHERWISE LOST THEIR MOORING",
+        "incident_count": 1,
+        "severe_incident_count": 0,
+        "fatalities": 0,
+        "injuries": 0
+      }
+    ],
+    "external_fire_initiating_cases": {
+      "total_count": 33,
+      "explanation": "In these Other Outside Force Damage records a nearby fire or explosion damaged the pipe, so ignition came before the release. The tree therefore classifies recorded outcomes and does not claim a fixed time order for every incident."
+    }
+  },
+  "sensitivity_analysis": {
+    "spec_1_primary_clean": {
+      "label": "Primary sample (N=1,271)",
+      "sample_size": 1271,
+      "p_ignition": 0.5838,
+      "p_explosion_given_ignition": 0.3558,
+      "severe_incidents": 287,
+      "severe_rate": 0.2258,
+      "fatalities": 113,
+      "injuries": 537,
+      "total_casualties": 650
+    },
+    "spec_2_include_conflicts": {
+      "label": "Include 12 conflict records (N=1,283)",
+      "sample_size": 1283,
+      "p_ignition": 0.5783,
+      "p_explosion_given_ignition": 0.3558,
+      "severe_incidents": 291,
+      "severe_rate": 0.2268,
+      "fatalities": 113,
+      "injuries": 549,
+      "total_casualties": 662
+    },
+    "spec_3_include_unknown_volume": {
+      "label": "Include 59 missing-volume records (N=1,330)",
+      "sample_size": 1330,
+      "p_ignition": 0.594,
+      "p_explosion_given_ignition": 0.3595,
+      "severe_incidents": 306,
+      "severe_rate": 0.2301,
+      "fatalities": 118,
+      "injuries": 561,
+      "total_casualties": 679
+    },
+    "spec_4_all_gas_records": {
+      "label": "All natural gas records (N=1,401)",
+      "sample_size": 1401,
+      "p_ignition": 0.5889,
+      "p_explosion_given_ignition": 0.3685,
+      "severe_incidents": 328,
+      "severe_rate": 0.2341,
+      "fatalities": 125,
+      "injuries": 600,
+      "total_casualties": 725
+    },
+    "spec_5_include_blank_commodity": {
+      "label": "Include 29 blank-commodity records (N=1,300)",
+      "sample_size": 1300,
+      "p_ignition": 0.5823,
+      "p_explosion_given_ignition": 0.3514,
+      "severe_incidents": 293,
+      "severe_rate": 0.2254,
+      "fatalities": 117,
+      "injuries": 543,
+      "total_casualties": 660
+    }
+  }
+}
